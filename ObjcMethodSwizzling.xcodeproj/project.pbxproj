@@ -14,6 +14,8 @@
 		2DFE52CD1B9983F4008E7CE2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DFE52CC1B9983F4008E7CE2 /* Images.xcassets */; };
 		2DFE52D01B9983F4008E7CE2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DFE52CE1B9983F4008E7CE2 /* LaunchScreen.xib */; };
 		2DFE52DC1B9983F4008E7CE2 /* ObjcMethodSwizzlingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE52DB1B9983F4008E7CE2 /* ObjcMethodSwizzlingTests.m */; };
+		2DFE52E71B99843E008E7CE2 /* NSBundle+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE52E61B99843E008E7CE2 /* NSBundle+Swizzling.m */; };
+		2DFE52F51B998DC2008E7CE2 /* Test.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2DFE52EC1B998DA5008E7CE2 /* Test.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,6 +25,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 2DFE52BB1B9983F4008E7CE2;
 			remoteInfo = ObjcMethodSwizzling;
+		};
+		2DFE52F31B998DB9008E7CE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2DFE52B41B9983F4008E7CE2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2DFE52EB1B998DA5008E7CE2;
+			remoteInfo = Test;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -40,6 +49,10 @@
 		2DFE52D51B9983F4008E7CE2 /* ObjcMethodSwizzlingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjcMethodSwizzlingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DFE52DA1B9983F4008E7CE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2DFE52DB1B9983F4008E7CE2 /* ObjcMethodSwizzlingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjcMethodSwizzlingTests.m; sourceTree = "<group>"; };
+		2DFE52E51B99843E008E7CE2 /* NSBundle+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Swizzling.h"; sourceTree = "<group>"; };
+		2DFE52E61B99843E008E7CE2 /* NSBundle+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Swizzling.m"; sourceTree = "<group>"; };
+		2DFE52EC1B998DA5008E7CE2 /* Test.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Test.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DFE52EF1B998DA5008E7CE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +70,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2DFE52E91B998DA5008E7CE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -65,6 +85,7 @@
 			children = (
 				2DFE52BE1B9983F4008E7CE2 /* ObjcMethodSwizzling */,
 				2DFE52D81B9983F4008E7CE2 /* ObjcMethodSwizzlingTests */,
+				2DFE52ED1B998DA5008E7CE2 /* Test */,
 				2DFE52BD1B9983F4008E7CE2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +95,7 @@
 			children = (
 				2DFE52BC1B9983F4008E7CE2 /* ObjcMethodSwizzling.app */,
 				2DFE52D51B9983F4008E7CE2 /* ObjcMethodSwizzlingTests.xctest */,
+				2DFE52EC1B998DA5008E7CE2 /* Test.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,6 +103,8 @@
 		2DFE52BE1B9983F4008E7CE2 /* ObjcMethodSwizzling */ = {
 			isa = PBXGroup;
 			children = (
+				2DFE52E51B99843E008E7CE2 /* NSBundle+Swizzling.h */,
+				2DFE52E61B99843E008E7CE2 /* NSBundle+Swizzling.m */,
 				2DFE52C31B9983F4008E7CE2 /* AppDelegate.h */,
 				2DFE52C41B9983F4008E7CE2 /* AppDelegate.m */,
 				2DFE52C61B9983F4008E7CE2 /* ViewController.h */,
@@ -119,6 +143,22 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		2DFE52ED1B998DA5008E7CE2 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				2DFE52EE1B998DA5008E7CE2 /* Supporting Files */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		2DFE52EE1B998DA5008E7CE2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2DFE52EF1B998DA5008E7CE2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -133,6 +173,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				2DFE52F41B998DB9008E7CE2 /* PBXTargetDependency */,
 			);
 			name = ObjcMethodSwizzling;
 			productName = ObjcMethodSwizzling;
@@ -157,6 +198,23 @@
 			productReference = 2DFE52D51B9983F4008E7CE2 /* ObjcMethodSwizzlingTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		2DFE52EB1B998DA5008E7CE2 /* Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DFE52F01B998DA5008E7CE2 /* Build configuration list for PBXNativeTarget "Test" */;
+			buildPhases = (
+				2DFE52E81B998DA5008E7CE2 /* Sources */,
+				2DFE52E91B998DA5008E7CE2 /* Frameworks */,
+				2DFE52EA1B998DA5008E7CE2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Test;
+			productName = Test;
+			productReference = 2DFE52EC1B998DA5008E7CE2 /* Test.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -172,6 +230,9 @@
 					2DFE52D41B9983F4008E7CE2 = {
 						CreatedOnToolsVersion = 6.4;
 						TestTargetID = 2DFE52BB1B9983F4008E7CE2;
+					};
+					2DFE52EB1B998DA5008E7CE2 = {
+						CreatedOnToolsVersion = 6.4;
 					};
 				};
 			};
@@ -190,6 +251,7 @@
 			targets = (
 				2DFE52BB1B9983F4008E7CE2 /* ObjcMethodSwizzling */,
 				2DFE52D41B9983F4008E7CE2 /* ObjcMethodSwizzlingTests */,
+				2DFE52EB1B998DA5008E7CE2 /* Test */,
 			);
 		};
 /* End PBXProject section */
@@ -199,6 +261,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DFE52F51B998DC2008E7CE2 /* Test.bundle in Resources */,
 				2DFE52CB1B9983F4008E7CE2 /* Main.storyboard in Resources */,
 				2DFE52D01B9983F4008E7CE2 /* LaunchScreen.xib in Resources */,
 				2DFE52CD1B9983F4008E7CE2 /* Images.xcassets in Resources */,
@@ -212,6 +275,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2DFE52EA1B998DA5008E7CE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -219,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DFE52E71B99843E008E7CE2 /* NSBundle+Swizzling.m in Sources */,
 				2DFE52C81B9983F4008E7CE2 /* ViewController.m in Sources */,
 				2DFE52C51B9983F4008E7CE2 /* AppDelegate.m in Sources */,
 				2DFE52C21B9983F4008E7CE2 /* main.m in Sources */,
@@ -233,6 +304,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2DFE52E81B998DA5008E7CE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -240,6 +318,11 @@
 			isa = PBXTargetDependency;
 			target = 2DFE52BB1B9983F4008E7CE2 /* ObjcMethodSwizzling */;
 			targetProxy = 2DFE52D61B9983F4008E7CE2 /* PBXContainerItemProxy */;
+		};
+		2DFE52F41B998DB9008E7CE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2DFE52EB1B998DA5008E7CE2 /* Test */;
+			targetProxy = 2DFE52F31B998DB9008E7CE2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -397,6 +480,37 @@
 			};
 			name = Release;
 		};
+		2DFE52F11B998DA5008E7CE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Test/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		2DFE52F21B998DA5008E7CE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Test/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -422,6 +536,14 @@
 			buildConfigurations = (
 				2DFE52E31B9983F4008E7CE2 /* Debug */,
 				2DFE52E41B9983F4008E7CE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2DFE52F01B998DA5008E7CE2 /* Build configuration list for PBXNativeTarget "Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DFE52F11B998DA5008E7CE2 /* Debug */,
+				2DFE52F21B998DA5008E7CE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
